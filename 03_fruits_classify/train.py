@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 name_dict = {"apple": 0, "banana": 1, "grape": 2,
              "orange": 3, "pear": 4}
-data_root_path = "dataset/fruits/"  # 数据集所在目录
+data_root_path = "../dataset/fruits/"  # 数据集所在目录
 test_file_path = data_root_path + "test.txt"  # 测试集
 train_file_path = data_root_path + "train.txt"  # 训练集
 # 记录每个类别有哪些图像 key:水果名称  value:所有图片路径列表
@@ -255,7 +255,7 @@ exe.run(fluid.default_startup_program())
 feeder = fluid.DataFeeder(feed_list=[image, label],
                           place=place)
 
-model_save_dir = "model/fruits/"  # 模型保存目录
+model_save_dir = "../model/fruits/"  # 模型保存目录
 costs = []  # 记录损失值
 accs = []  # 记录准确率
 times = 0
@@ -315,7 +315,7 @@ def load_img(path):
 # 执行器
 place = fluid.CPUPlace()
 infer_exe = fluid.Executor(place)
-model_save_dir = "model/fruits/"
+model_save_dir = "../model/fruits/"
 
 infer_imgs = []  # 待预测图像数据
 test_img = "grape_1.png"  # 待预测图像名称

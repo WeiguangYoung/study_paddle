@@ -13,9 +13,9 @@ from multiprocessing import cpu_count
 # 数据预处理，将中文文字解析出来，并进行编码转换为数字，每一行文字存入数组
 mydict = {}  # 存放出现的字及编码，格式： 好,1
 code = 1
-data_file = "dataset/hotel_discuss2.csv"
-dict_file = "dataset/hotel_dict.txt"
-encoding_file = "dataset/hotel_encoding.txt"
+data_file = "../dataset/hotel_discuss.csv"
+dict_file = "../dataset/hotel_dict.txt"
+encoding_file = "../dataset/hotel_encoding.txt"
 puncts = " \n"
 
 with open(data_file, "r", encoding="utf-8-sig") as f:
@@ -185,9 +185,9 @@ import os
 import random
 from multiprocessing import cpu_count
 
-data_file = "data/hotel_discuss.csv"
-dict_file = "data/hotel_dict.txt"
-encoding_file = "data/hotel_encoding.txt"
+data_file = "../dataset/hotel_discuss.csv"
+dict_file = "../dataset/hotel_dict.txt"
+encoding_file = "../dataset/hotel_encoding.txt"
 model_save_dir = "model/chn_emotion_analyses.model"
 
 

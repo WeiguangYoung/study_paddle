@@ -182,7 +182,7 @@ def CNN_net(data, dict_dim, class_dim=10, emb_dim=128, hid_dim=128, hid_dim2=98)
 
 # 定义和训练模型
 EPOCH_NUM = 40
-model_save_dir = "model/news_classify/"
+model_save_dir = "../model/news_classify/"
 
 # 定义输入数据
 words = fluid.layers.data(name="words", shape=[1], dtype="int64",
