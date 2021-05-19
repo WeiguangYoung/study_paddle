@@ -254,7 +254,6 @@ exe.run(fluid.default_startup_program())
 # feeder
 feeder = fluid.DataFeeder(feed_list=[image, label],
                           place=place)
-
 model_save_dir = "../model/fruits/"  # 模型保存目录
 costs = []  # 记录损失值
 accs = []  # 记录准确率
@@ -272,7 +271,7 @@ for pass_id in range(2):
             feed=feeder.feed(data),  # 喂入参数
             fetch_list=[avg_cost, accuracy])
         # 打印
-        if batch_id % 20 == 0:
+        if batch_id % 2 == 0:
             print("pass_id:%d, batch:%d, cost:%f, acc:%f"
                   % (pass_id, batch_id,
                      train_cost[0], train_acc[0]))

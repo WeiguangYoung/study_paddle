@@ -86,7 +86,7 @@ plt.xlabel("iter", fontsize=14)
 plt.ylabel("cost", fontsize=14)
 plt.plot(iters, train_costs, color="red", label="Training Cost")
 plt.grid()
-plt.savefig("./02_uci_housing/train.jpg")
+plt.savefig("../02_uci_housing/train.jpg")
 
 # 第四步：预测、预测结果可视化
 infer_exe = fluid.Executor(place)  # 用于预测的执行器
@@ -144,5 +144,5 @@ plt.scatter(ground_truths, infer_result,
             color="green", label="Test")
 plt.grid()
 plt.legend()
-plt.savefig("./02_uci_housing/pred.png")  # 保存图像
+plt.savefig("../02_uci_housing/pred.png")  # 保存图像
 plt.show()

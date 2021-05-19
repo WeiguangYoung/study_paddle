@@ -167,7 +167,7 @@ for pass_id in range(2):
 print("模型训练完成......")
 
 # 保存模型
-model_save_dir = "model/chn_emotion_analyses.model"
+model_save_dir = "../model/chn_emotion_analyses.model"
 if not os.path.exists(model_save_dir):
     print("create model path")
     os.makedirs(model_save_dir)
@@ -188,7 +188,7 @@ from multiprocessing import cpu_count
 data_file = "../dataset/hotel_discuss.csv"
 dict_file = "../dataset/hotel_dict.txt"
 encoding_file = "../dataset/hotel_encoding.txt"
-model_save_dir = "model/chn_emotion_analyses.model"
+model_save_dir = "../model/chn_emotion_analyses.model"
 
 
 def load_dict():
