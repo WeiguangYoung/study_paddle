@@ -1,11 +1,15 @@
 # study_paddle
 
 ### 01_DL
-包含线性回归，房价预测，水果分类，新闻分类，情感分类五个demo
+- [linear_regress](01_DL/01_linear_regress)
+- [uci_housing](01_DL/02_uci_housing)
+- [fruits_classify](01_DL/03_fruits_classify)
+- [news_classify](01_DL/04_news_classify)
+- [emotion_classify](01_DL/05_emotion_classify)
 
 ### 02_RL
-- [Sarsa](02_RL/01_q_learning)
-- [Q-learning](02_RL/02_sarsa)
+- [Q-learning](02_RL/01_q_learning)
+- [Sarsa](02_RL/02_sarsa)
 - [DQN](02_RL/03_dqn)
 - [Policy Gradient](02_RL/04_policy_gradient)
 - [DDPG](02_RL/05_ddpg)
